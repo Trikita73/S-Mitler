@@ -307,4 +307,16 @@ $colors: $blue, $red, $accent
 	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
 		background-color: nth($colors, $i) 
 
+.carousel-services
+	&-item
+		color: #fff
+		font-weight: 300
+		font-size: 18px 
+		position: relative
+		display: flex
+		flex-direction: column-reverse
+	&-image
+
+
+
 @import "media" // Всегда в конце
