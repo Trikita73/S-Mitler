@@ -26,6 +26,7 @@ $(function() {
 	});
 	$('.carousel-services').owlCarousel({
 		//loop: true,
+		dots: false,
 		nav: true,
 		smartSpeed: 700,
 		navText: ['<i class="fa fa-angel-double-left"></i>', '<i class="fa fa-angel-double-right"></i>'],
@@ -58,11 +59,12 @@ $(function() {
 		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
 	});
 
-	//-- Add function on Resize --//
+	//-- Add function on Resize Window --//
 	function onResize() {
 		//-- EqualHeights --//
 		$('.carousel-services-content').equalHeights();
 	}onResize();
+	window.onresize = function() {onResize();};
 
 });
 

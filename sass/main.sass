@@ -377,7 +377,24 @@ $colors: $blue, $red, $accent
 				font-family: firasans, sans-serif 
 				color: #4A4A4A	
 			.fa
-				font-size: 14px		
+				font-size: 14px	
+	.owl-nav
+		position: absolute	
+		top: 0
+		width: 100%			
+		> div 
+			width: 64px 
+			height: 64px 
+			background-color: #fff
+			color: $dark 
+			position: absolute
+			text-align: center
+			line-height: 64px 
+			font-size: 26px 
+			&.owl-prev 
+				left: 0
+			&.owl-next
+				right: 0
 
 .owl-carousel 
 	.owl-item
