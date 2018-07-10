@@ -39,11 +39,11 @@ $(function() {
 	});
 	
 	function carouselService() {
-		$('.carousel-service-item').each(function() {
-			var ths =$(this),
-				thsh = ths.find('.carousel-service-content').outerHeight();
+		$('.carousel-services-item').each(function() {
+			var ths = $(this);
+				thsh = ths.find('.carousel-services-content').outerHeight();
 				ths.find('.carousel-services-image').css('min-height', thsh);
 		});
-	}
+	}carouselService();
 
 });

@@ -308,6 +308,7 @@ $colors: $blue, $red, $accent
 		background-color: nth($colors, $i) 
 
 .carousel-services
+	background-color: $dark
 	&-item
 		color: #fff
 		font-weight: 300
@@ -315,8 +316,25 @@ $colors: $blue, $red, $accent
 		position: relative
 		display: flex
 		flex-direction: column-reverse
+		&:hover
+			.carousel-services-image
+				opacity: 1
+	.owl-item		
+
+		&:nth-child(2n+2)
+			.carousel-services-item
+				flex-direction: column		
 	&-image
+		background-size: cover
+		background-position: center
+		opacity: .7
+		transition: opacity .5s ease
+	&-content 
+		display: flex	
+	position: relative
 
-
+.owl-carousel 
+	.owl-item
+		backface-visibility: inherit
 
 @import "media" // Всегда в конце
