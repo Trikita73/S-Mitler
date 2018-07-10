@@ -19,8 +19,13 @@ $(function() {
 	});
 
 	//-- Plugin owlCarousel --//
+	$('.carousel-services').on('initialized.owl.carousel', function() {
+		setTimeout(function() {
+			carouselService()
+		}, 100);
+	});
 	$('.carousel-services').owlCarousel({
-		loop: true,
+		//loop: true,
 		nav: true,
 		smartSpeed: 700,
 		navText: ['<i class="fa fa-angel-double-left"></i>', '<i class="fa fa-angel-double-right"></i>'],
@@ -38,6 +43,7 @@ $(function() {
 		}
 	});
 	
+	//-- Image Up Down Carousel --//
 	function carouselService() {
 		$('.carousel-services-item').each(function() {
 			var ths = $(this);
@@ -46,4 +52,17 @@ $(function() {
 		});
 	}carouselService();
 
+	//-- Wrapper for Words --//
+	$('.carousel-services-composition .h3').each(function() {
+		var ths = $(this);
+		ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
+	});
+
+	//-- Add function on Resize --//
+	function onResize() {
+		//-- EqualHeights --//
+		$('.carousel-services-content').equalHeights();
+	}onResize();
+
 });
+
