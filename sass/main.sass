@@ -61,6 +61,7 @@ body
 	line-height: 1.4
 	text-transform: uppercase		
 
+//-- Header --//
 .logo 
 	img
 		width: 125px
@@ -89,6 +90,8 @@ section
 	&.inverse
 		color: #fff
 		background-color: $dark
+		&.s-call
+			background-color: #fff
 	.h2
 		font-size: 30px 
 		font-weight: 800
@@ -153,7 +156,7 @@ section
 			&::after
 				background-color: rgba(#000, .4)			
 
-
+//-- Menu --//
 .hamburger	
 	right: 0
 	position: absolute
@@ -216,6 +219,7 @@ html.mm-opened
 				&>a
 					color: $accent	
 
+	//-- Title Header --//
 .header-flex
 	display: flex
 	height: 100%
@@ -271,6 +275,7 @@ html.mm-opened
 				margin-left: 10px
 				margin-right: inherit
 
+//-- Social Icon --//
 .header-social
 	position: absolute
 	display: flex
@@ -301,6 +306,7 @@ html.mm-opened
 		&:hover
 			background-color: rgba(#fff, .4)
 
+//-- Contacts Bottom --//
 .header-contacts 
 	position: absolute
 	bottom: 0
@@ -417,6 +423,19 @@ $colors: $blue, $red, $accent
 		p
 			margin: 30px 0
 			font-size: 18px
+	//-- CallBack Start--//		
+	&-call
+		background-size: contain
+		background-repeat: no-repeat	
+		background-position: 25%
+		&::before
+			content: ''
+			width: 50%
+			right: 0
+			height: 100%
+			position: absolute
+			background-color: rgba($accent, .92)
+	//-- CallBack End--//			
 
 .section-overlay
 	&::before

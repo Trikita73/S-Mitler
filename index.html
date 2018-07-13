@@ -25,13 +25,12 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	
 </head>
 
 <body class="ishome">
 
 	<div id="my-page">
-
 		<!-- Header -->
 		<div id="my-header">
 			<header class="site_header" style="background-image: url(img/top-bg.jpg)">
@@ -59,6 +58,7 @@
 						</ul>
 					</nav>	
 				</div>
+				<!-- Title Header -->
 				<div class="header-flex">
 					<div class="flex-center">
 						<div class="container">
@@ -78,6 +78,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- Social Icon -->
 				<div class="header-social">
 					<nav class="soc">
 						<ul>
@@ -87,6 +88,7 @@
 						</ul>
 					</nav>
 				</div>
+				<!-- Contacts Bottom -->
 				<div class="header-contacts">
 					<div class="container">
 						<div class="row">
@@ -104,12 +106,12 @@
 				</div>
 			</header>
 		</div>
-		<!-- Owl-Carousel -->
+		<!-- Content -->
 		<div id="my-content">
-
+			<!-- Owl-Carousel -->
 			<section class="s-services">
 				<div class="owl-carousel carousel-services">
-
+					<!-- Item_1 -->
 					<div class="carousel-services-item">
 						<div class="carousel-services-content">
 							<div class="carousel-services-composition">
@@ -127,7 +129,7 @@
 						</div>	
 						<div class="carousel-services-image" style="background-image: url(img/service.png);"></div>	
 					</div>
-					
+					<!-- Item_2 -->
 					<div class="carousel-services-item">
 						<div class="carousel-services-content">
 							<div class="carousel-services-composition">
@@ -145,7 +147,7 @@
 						</div>	
 						<div class="carousel-services-image" style="background-image: url(img/service2.png);"></div>	
 					</div>
-
+					<!-- Item_3 -->
 					<div class="carousel-services-item">
 						<div class="carousel-services-content">
 							<div class="carousel-services-composition">
@@ -163,7 +165,7 @@
 						</div>	
 						<div class="carousel-services-image" style="background-image: url(img/service3.png);"></div>	
 					</div>
-
+					<!-- Item_4 -->
 					<div class="carousel-services-item">
 						<div class="carousel-services-content">
 							<div class="carousel-services-composition">
@@ -182,10 +184,8 @@
 						</div>	
 						<div class="carousel-services-image" style="background-image: url(img/service2.png);"></div>	
 					</div>
-				
 				</div>
 			</section>
-
 			<!-- Fotorama -->
 			<section class="s-king inverse section-overlay" style="background-image: url(img/photos/foto-16.jpg);">
 				<div class="container">
@@ -204,6 +204,37 @@
 								<img src="img/photos/small/foto-19.jpg" alt="Фото Салона Красоты">
 								<img src="img/photos/small/foto-23.jpg" alt="Фото Салона Красоты">
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="s-call inverse" style="background-image: url(img/madama.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-6">
+							<form class="callback">
+								<div class="success"><span>Спасибо за заявку!</span></div>
+								<!-- Hidden Required Fields -->
+									<input type="hidden" name="project_name" value="SMitler">
+									<input type="hidden" name="admin_email" value="dyachenkoandrii@gmail.com">
+									<input type="hidden" name="form_subject" value="Заявка с сайта 'SMitler'">
+								<!-- END Hidden Required Fields -->
+								<input type="hidden" name="Page" value="">
+								<div class="callback-logo"><img src="img/logo-2.svg" alt="S&Mitler Салон красоты"></div>
+								<div class="formhead">Оставить заявку</div>
+								<p>Оставьте заявку и мы перезвоним вам в течение 15 минут.</p>
+								<input type="text" name="Имя" placeholder="Ваше имя..." required>
+								<input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+								<select name="Услуга">
+									<option>Парикмахерский сервис</option>
+									<option>Косметический сервис</option>
+									<option>Маникюрный сервис</option>
+									<option>Массаж и SPA</option>
+									<option>Солярий</option>
+								</select>
+								<button class="button button-white">Отправить</button>
+							</form>
 						</div>
 					</div>
 				</div>
