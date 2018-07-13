@@ -63,8 +63,26 @@ $(function() {
 		ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
 	});
 
-	//-- --//
+	//-- Selectize for Callback form --//
 	$('select').selectize();
+
+	//-- E-mail Ajax Send --//
+	$("form.callback").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+			setTimeout(function() {
+				$(th).find('.success').removeClass('active').fadeOut();
+				// Done Functions
+				th.trigger("reset");
+			}, 2000);
+		});
+		return false;
+	});
 
 	//-- Add function on Resize Window --//
 	function onResize() {
