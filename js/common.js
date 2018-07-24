@@ -25,7 +25,7 @@ $(function() {
 		}, 100);
 	});
 
-	//-- On Owl-Carousel Section-Services --//
+	//-- Turn_On Owl-Carousel Section-Services --//
 	$('.carousel-services').owlCarousel({
 		//loop: true,
 		dots: false,
@@ -46,7 +46,7 @@ $(function() {
 		}
 	});
 
-	//-- On Owl-Carousel Section-Reviews --//
+	//-- Turn_On Owl-Carousel Section-Reviews --//
 	$('.reviews').owlCarousel({
 		loop: true,
 		items: 1,
