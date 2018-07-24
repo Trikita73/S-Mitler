@@ -24,6 +24,8 @@ $(function() {
 			carouselService()
 		}, 100);
 	});
+
+	//-- On Owl-Carousel Section-Services --//
 	$('.carousel-services').owlCarousel({
 		//loop: true,
 		dots: false,
@@ -42,6 +44,14 @@ $(function() {
 				items: 3
 			}
 		}
+	});
+
+	//-- On Owl-Carousel Section-Reviews --//
+	$('.reviews').owlCarousel({
+		loop: true,
+		items: 1,
+		smartspeed: 700,
+		nav: false
 	});
 	
 	//-- Image Up Down Carousel --//

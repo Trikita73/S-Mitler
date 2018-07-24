@@ -54,6 +54,9 @@ body
 	line-height: 1.4
 	text-transform: uppercase		
 
+.text-center
+	text-align: center
+
 //-- Header --//
 .logo 
 	img
@@ -315,9 +318,6 @@ html.mm-opened
 		font-family: firasans, sans-serif 	
 		text-align: center
 
-.text-center
-	text-align: center
-
 ::selection
 	background-color: $accent
 	color: #fff
@@ -573,6 +573,31 @@ select
 		option 
 			color: #333	
 	.button
-		margin-top: 40px 		
+		margin-top: 40px 	
+
+//-- Reviews --//
+.reviews 
+	text-align: center
+
+.quotes
+	position: absolute
+	width: 100%
+	&::before, &::after
+		content: ',,'
+		position: absolute
+		font-size: 56px
+		color: $accent 
+		font-family: 'Times New Roman', sans-serif
+		font-weight: bold
+		line-height: 0
+		transform: rotate(180deg)
+		display: block
+		top: 182px
+	&::before
+		top: 220px 	
+		left: -60px
+	&::after
+		right: -60px 
+		transform: rotate(0)	
 
 @import "media" // Всегда в конце
