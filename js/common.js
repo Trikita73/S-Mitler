@@ -51,7 +51,8 @@ $(function() {
 		loop: true,
 		items: 1,
 		smartspeed: 700,
-		nav: false
+		nav: false,
+		autoHeight: true
 	});
 	
 	//-- Image Up Down Carousel --//
