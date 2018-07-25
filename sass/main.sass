@@ -435,6 +435,7 @@ $colors: $blue, $red, $accent
 		&::before 
 			background-color: #fff
 		.h2
+			margin-top: 10px
 			span
 				color: $accent 					
 
@@ -645,7 +646,7 @@ select
 		transform: rotate(0)	
 
 //-- Partner --//	
-.partners 
+.partners.owl-carousel 
 	.partner
 		width: 100%
 		display: flex
@@ -657,8 +658,29 @@ select
 		img
 			max-width: 100%
 			width: auto
+			display: inline-block
 			margin: auto
+			padding: 20px 0
 	.owl-nav
-		 		
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		> div
+			position: absolute
+			top: 50px 
+			color: #999999
+			font-size: 30px 
+			transition: opacity .5s ease
+			padding: 0 10px 
+			&:hover
+				opacity: .6
+			&.owl-prev
+				left: -60px
+			&.owl-next
+				right: -60px 	
+			.fa
+				color: #999999
+				font-size: 30px			
 
 @import "media" // Всегда в конце
