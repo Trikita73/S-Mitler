@@ -54,6 +54,30 @@ $(function() {
 		nav: false,
 		autoHeight: true
 	});
+
+	//-- Turn_On Owl-Carousel Section-Partners --//
+	$('.partners').owlCarousel({
+		loop: true, 
+		smartspeed: 700,
+		dots: false,
+		nav: true,
+		navText: ['<i class="fa fa-angel-left"></i>', '<i class="fa fa-angel-right"></i>'],
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			}
+		}
+	});
 	
 	//-- Image Up Down Carousel --//
 	function carouselService() {

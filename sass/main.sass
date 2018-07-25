@@ -429,7 +429,14 @@ $colors: $blue, $red, $accent
 			height: 100%
 			position: absolute
 			background-color: rgba($accent, .92)
-	//-- CallBack End--//			
+	//-- CallBack End --//	
+	//-- Partner Start --//
+	&-partners.section-overlay
+		&::before 
+			background-color: #fff
+		.h2
+			span
+				color: $accent 					
 
 .section-overlay
 	&::before
@@ -636,5 +643,22 @@ select
 	&::after
 		right: -60px 
 		transform: rotate(0)	
+
+//-- Partner --//	
+.partners 
+	.partner
+		width: 100%
+		display: flex
+		margin: auto 
+	.owl-stage 
+		display: flex		
+	.owl-item
+		margin-top: 30px 	
+		img
+			max-width: 100%
+			width: auto
+			margin: auto
+	.owl-nav
+		 		
 
 @import "media" // Всегда в конце
