@@ -691,6 +691,37 @@ select
 	font-size: 14px 
 
 .footer-column
-	margin: 15px 0					
+	margin: 15px 0
+	p
+		position: relative
+		font-size: 15px 
+
+.logo-footer
+	width: 125px 
+	height: auto
+	+ p
+		color: #666666
+		padding: 0
+		margin:
+			bottom: 15px 
+			top: 15px
+		font-size: 15px
+
+.social-footer
+	margin-top: 38px 
+	.soc
+		li
+			display: inline-block
+			margin: 3px 
+			a
+				color: #ababab
+				margin-bottom: 0
+				transition: color .5s ease, background-color .5s ease
+				&:hover
+					color: rgba(#fff, .8)
+
+
+
+
 
 @import "media" // Всегда в конце
