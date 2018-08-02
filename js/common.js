@@ -31,7 +31,7 @@ $(function() {
 		dots: false,
 		nav: true,
 		smartSpeed: 700,
-		navText: ['<i class="fa fa-angel-double-left"></i>', '<i class="fa fa-angel-double-right"></i>'],
+		navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
 		responsiveClass: true,
 		responsive: {
 			0: {
@@ -61,7 +61,7 @@ $(function() {
 		smartspeed: 700,
 		dots: false,
 		nav: true,
-		navText: ['<i class="fa fa-angel-left"></i>', '<i class="fa fa-angel-right"></i>'],
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		responsiveClass: true,
 		responsive: {
 			0: {
