@@ -72,8 +72,8 @@ body
 	font-size: 22px
 	white-space: nowrap
 	.fa
-		color: #555555
-		font-size: 22px
+		color: #fff
+		font-size: 25px
 		margin-right: 3px
 		
 section, header
@@ -215,7 +215,7 @@ html.mm-opened
 				&>a
 					color: $accent	
 
-	//-- Title Header --//
+//-- Title Header --//
 .header-flex
 	display: flex
 	height: 100%
@@ -316,6 +316,7 @@ html.mm-opened
 	.fa
 		margin-right: 5px
 		color: #555
+		font-size: 20px
 	.phone-h
 		font-family: firasans, sans-serif 	
 		text-align: center
@@ -833,7 +834,7 @@ select
 			position: absolute
 		&::before 
 			animation: pulse-outer .8s ease-in infinite
-			&::after
+		&::after
 			animation: pulse-inner .8s linear infinite
 
 @keyframes pulse-outer
@@ -850,7 +851,34 @@ select
 		transform: scale(0)			
 	100%
 		@include opacity(100)
-		transform: scale(1)			
+		transform: scale(1)	
 
+//-- Title Wrap --//
+.top_line_wrap
+	height: 60px
+	background-color: #868686	
+	.logo
+		img
+			margin-top: 15px
+	.phone
+		right: 45px
+		top: 12px	
+
+.s-wrap-title
+	padding: 0 20px
+	background-color: #242424
+	color: #fff
+	.h2
+		text-align: center	
+	p
+		font-size: 18px
+		padding: 20px
+	.carousel-services-list
+		li
+			font-size: 20px
+			border-bottom: none
+	.services-wrap
+		text-align: center	
+		margin-top: 75px	
 
 @import "media" // Всегда в конце

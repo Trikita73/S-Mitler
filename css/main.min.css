@@ -121,8 +121,8 @@ body {
   font-size: 22px;
   white-space: nowrap; }
   .phone .fa {
-    color: #555555;
-    font-size: 22px;
+    color: #fff;
+    font-size: 25px;
     margin-right: 3px; }
 
 section, header {
@@ -388,7 +388,8 @@ html.mm-opened {
   background-color: rgba(21, 21, 21, 0.15); }
   .header-contacts .fa {
     margin-right: 5px;
-    color: #555; }
+    color: #555;
+    font-size: 20px; }
   .header-contacts .phone-h {
     font-family: firasans, sans-serif;
     text-align: center; }
@@ -945,7 +946,8 @@ select {
       position: absolute; }
     .preloader .pulse::before {
       -webkit-animation: pulse-outer .8s ease-in infinite;
-              animation: pulse-outer .8s ease-in infinite;
+              animation: pulse-outer .8s ease-in infinite; }
+    .preloader .pulse::after {
       -webkit-animation: pulse-inner .8s linear infinite;
               animation: pulse-inner .8s linear infinite; }
 
@@ -995,6 +997,31 @@ select {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+.top_line_wrap {
+  height: 60px;
+  background-color: #868686; }
+  .top_line_wrap .logo img {
+    margin-top: 15px; }
+  .top_line_wrap .phone {
+    right: 45px;
+    top: 12px; }
+
+.s-wrap-title {
+  padding: 0 20px;
+  background-color: #242424;
+  color: #fff; }
+  .s-wrap-title .h2 {
+    text-align: center; }
+  .s-wrap-title p {
+    font-size: 18px;
+    padding: 20px; }
+  .s-wrap-title .carousel-services-list li {
+    font-size: 20px;
+    border-bottom: none; }
+  .s-wrap-title .services-wrap {
+    text-align: center;
+    margin-top: 75px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1031,7 +1058,9 @@ select {
       font-size: 24px;
       padding-top: 0; }
       .footer-addr .footer-phone .fa {
-        top: 9px; } }
+        top: 9px; }
+  .s-wrap-title .carousel-services-list li {
+    font-size: 15px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1052,7 +1081,11 @@ select {
     .social-footer .soc li a {
       margin-top: 0; }
   .footer-menu {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .s-wrap-title .carousel-services-list {
+    margin-bottom: 40px; }
+    .s-wrap-title .carousel-services-list li {
+      font-size: 18px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
